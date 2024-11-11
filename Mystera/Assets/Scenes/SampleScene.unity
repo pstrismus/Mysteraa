@@ -171,7 +171,7 @@ Transform:
   m_GameObject: {fileID: 56228211}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.09081833, z: -0, w: 0.9958675}
-  m_LocalPosition: {x: -10.5, y: 0.978, z: 5.65}
+  m_LocalPosition: {x: -10.5, y: 0.978, z: 3.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -199,7 +199,11 @@ MonoBehaviour:
   groundCheck: {fileID: 1319322701}
   groundMask:
     serializedVersion: 2
-    m_Bits: 136
+    m_Bits: 8
+  notmask:
+    serializedVersion: 2
+    m_Bits: 128
+  isHittingWall: 0
 --- !u!54 &56228219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5462,7 +5466,7 @@ GameObject:
   - component: {fileID: 1945578071}
   - component: {fileID: 1945578070}
   - component: {fileID: 1945578069}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799747530b3375a4aae09f6e846a8c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTriger: 0
+  isTrigger: 0
   kuvvet: {x: 0, y: 0, z: 0}
 --- !u!1 &2115725942
 GameObject:
@@ -5688,7 +5692,7 @@ GameObject:
   - component: {fileID: 2115725945}
   - component: {fileID: 2115725944}
   - component: {fileID: 2115725943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
